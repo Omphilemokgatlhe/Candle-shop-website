@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>candle shop</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(1, 9, 15);
+        
+      }
+      h2 {
+        text-align: center;
+        border: 1px,2px solid black;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .paper {
+        line-height: 1.5;
+        font-size: 15px;
+        text-decoration: solid;
+        padding: 5px;
+        border-radius: 30px 20px;
+        background:#d491c4 
+      }
+
+      
+      button {
+        text-align: center;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin: 0 auto;
+        color:black;
+        font-size: 10px;
+        transition: all 200ms ease-in-out;
+
+      }
+      button:hover{
+          background: white;
+          cursor: pointer;
+
+      }
+      .best{
+        text-align: center;
+
+      }
+      .flower{
+        background:#FFEFBF ;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px,60px;
+        background: linear-gradient();
+      }
+       
+    </style>
+  </head>
+  <body>
+    <div class="flower">
+    <h1>Scented candles</h1>
+    <h2>for the love of candles!</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/488/original/download.jpg?1696000401" width="300"
+    />
+    <p class="paper">
+      There is nothing quite like a candle to light up your life. Whether they’re a bold colour or a classic white, they shine bright and provide a flicker of hope. Jokes aside, candles really do come in handy when you least expect it. From birthday candles that fill up granny’s cake to floating candles that make nights at the pool more magical, you can never have enough.Shop our luxury candle curation and find the right light for every corner. Free delivery across South Africa on all orders over R450.
+      
+      <button>
+          Buy
+      </button>
+      
+      <p class="best">
+      this page is built by
+        <a href="https://github.com/Omphilemokgatlhe"> Omphile Mokgatlhe</a>
+    </p>
+    <br />
+      
+    </p>
+    </div>
+    <script>
+      function buy (){
+        let name = prompt ("what is your name?");
+        let email = prompt ("what is your email address?");
+        let emoji = prompt ("what is your favorite emoji?");
+
+        alert("thank you" +" "+ name +" " +"we'll be intouch via email,meanwhile burn as much candles as you can 🕯️"+ emoji);
+      }
+    
+      let buyButton = document.querySelector("Button");
+          buyButton.addEventListener("click",buy);
+    </script>
+  </body>
+</html>
